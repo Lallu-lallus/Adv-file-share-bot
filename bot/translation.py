@@ -14,11 +14,11 @@ athinayi @The_bad_boyii idhehathe bendhapettal mathy😂
 </i>"""    
     
     HELP_TEXT = """
-<b><i><u>entha mone fear ayoh😂🤭 ivada help onnum kittathilla poda😂
+<b>entha mone fear ayoh😂🤭 ivada help onnum kittathilla poda😂
 njan palathum parayum 😜athu kettu help kuthan ninna nee verum mandan 😂🤭
 ivada nokki ninnattu oru karyom illa😂
 po poi mannu vari thinnu🤭😂
-"""
+</b>"""
     
     ABOUT_TEXT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
     
