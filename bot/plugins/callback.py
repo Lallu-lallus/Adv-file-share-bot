@@ -95,7 +95,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"🐔 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🐓", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>Found</i> <code>{leng}</code> <i>❣︎❣︎❣︎❣︎❣︎❣︎ 𝗡𝗜𝗡𝗚𝗔𝗟 𝗖𝗛𝗢𝗗𝗛𝗜𝗖𝗛𝗔 𝗠𝗢𝗩𝗜𝗘 𝗧𝗛𝗔𝗭𝗛𝗘 𝗞𝗔𝗔𝗡𝗨𝗡𝗡𝗔 𝗕𝗨𝗧𝗧𝗢𝗡 𝗖𝗟𝗜𝗖𝗞 𝗖𝗛𝗘𝗬𝗧𝗛𝗨 𝗦𝗧𝗔𝗥𝗧 𝗞𝗜𝗨𝗧𝗛𝗨𝗬𝗔𝗟 𝗠𝗔𝗧𝗛𝗜𝗬𝗔𝗞𝗨𝗠 𝗙𝗜𝗟𝗘 𝗞𝗜𝗧𝗧𝗨𝗠☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
@@ -211,7 +211,7 @@ async def cb_settings(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ☜︎︎︎", callback_data="close"
                 )
         ]
     ]
@@ -332,12 +332,12 @@ async def cb_channel_list(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data="settings"
+                    "☜︎︎︎☜︎︎︎ Back", callback_data="settings"
                 ),
             
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ☜︎︎︎", callback_data="close"
                 )
         ]
     ) 
@@ -664,12 +664,12 @@ async def cb_channel_delete(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "🔙 Back", callback_data=f"channel_list({chat_id})"
+                    "☜︎︎︎☜︎︎︎ Back", callback_data=f"channel_list({chat_id})"
                 ),
                 
             InlineKeyboardButton
                 (
-                    "Close 🔐", callback_data="close"
+                    "Close ☜︎︎︎", callback_data="close"
                 )
         ]
     ]
@@ -1639,10 +1639,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/The _bad_boyii'),
             InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣♲︎︎︎♲︎︎︎☜︎︎︎', url='https://t.me/CrazyBotszGrp')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
@@ -1659,10 +1659,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "help":
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('About 🚩', callback_data='about')
+            InlineKeyboardButton('Home ☜︎︎︎', callback_data='start'),
+            InlineKeyboardButton('About ☜︎︎︎', callback_data='about')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Close ☜︎︎︎', callback_data='close')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1677,8 +1677,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('Home ☜︎︎︎', callback_data='start'),
+            InlineKeyboardButton('Close ☜︎︎︎', callback_data='close')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
